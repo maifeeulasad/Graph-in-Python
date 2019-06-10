@@ -6,6 +6,13 @@ plt.title("Accuracy Comparison")
 
 plt.tick_params(axis='x',labelbottom=False,direction="in")
 
+#ax.set_yticks([1426,3324,3604,4933,5644])
+
+'''
+for xx in range(10,100,10):
+    ax.Axes.axhline(plt.gca(),y=xx)
+'''
+
 plt.ylabel("Accuracy(%)")
 plt.ylim(0,100)
 plt.xlim(0,6000)
@@ -28,7 +35,7 @@ cell_text=[]
 cell_text.append([47.16,46.15,67.5,68,70])
 cell_text.append([58.19,59.87,73,76.5,78])
 cell_text.append([67.89,59.87,58,69,74.5])
-cell_text.append(['n/a','n/a',65.5,73,77.5])
+cell_text.append(['','',65.5,73,77.5])
 
 the_table = plt.table(cellText=cell_text,
                       rowLabels=rows,
