@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.axes as ax
 
-
+plt.gcf().subplots_adjust(bottom=0.25)
 plt.title("Accuracy Comparison")
 
 plt.tick_params(axis='x',labelbottom=False,direction="in")
@@ -28,11 +28,12 @@ cell_text=[]
 cell_text.append([47.16,46.15,67.5,68,70])
 cell_text.append([58.19,59.87,73,76.5,78])
 cell_text.append([67.89,59.87,58,69,74.5])
-cell_text.append([0,0,65.5,73,77.5])
+cell_text.append(['n/a','n/a',65.5,73,77.5])
 
 the_table = plt.table(cellText=cell_text,
                       rowLabels=rows,
-                      colLabels=columns)
+                      colLabels=columns,
+                      loc='bottom')
 
 
 
